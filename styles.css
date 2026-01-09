@@ -167,16 +167,3 @@ button:disabled {
   padding: 12px;
   border-radius: 4px;
 }
-
-
-/* @media (max-width: 600px) {
-  #controls-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .column input,
-  .column button {
-    width: 100%;
-  }
-} */
