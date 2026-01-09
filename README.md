@@ -1,10 +1,9 @@
-Project Title
 Scheels "FizzBuzz" Website
 
 Description:
 This website was created for the Scheels ECOM Developer interview. It implements an FizzBuzz-style program that allows users to define a custom minimum and maximum number range, add, edit, or remove rules based on a divisor and output text, run the program to display results, and reset the output as needed.
 
-Features
+Features:
     -Dynamic number range configuration
     -Fully customizable rules (divisor + output text)
     -Live rule editing without deletion/re-creation
