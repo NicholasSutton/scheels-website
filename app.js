@@ -12,11 +12,13 @@ let rules = [
 ];
 
 /*  Range  */
+
+//Updates the min/max range after checking if it's valid.
 function updateRange() {
   const min = Number(minInput.value);
   const max = Number(maxInput.value);
 
-  if (Number.isNaN(min) || Number.isNaN(max) || min > max) {
+  if (Number.isNaN(min) || Number.isNaN(max) || (min < 0 || max < 0) || min > max) {
     alert("Invalid range");
     return;
   }
@@ -55,6 +57,8 @@ function resetProgram() {
 }
 
 /*  Rules  */
+
+//Checks the inputs for values and if they are present, adds them to the array of rules
 function addRule() {
   const divisor = Number(divisorInput.value);
   const text = textInput.value.trim();
@@ -67,12 +71,13 @@ function addRule() {
 
   renderRules();
 }
-
+//Removes rule from the rule array, then re-renders
 function removeRule(index) {
   rules.splice(index, 1);
   renderRules();
 }
 
+//Loops through the rules array and adds the divisor, value, and remove button.
 function renderRules() {
   rulesList.innerHTML = "";
 
